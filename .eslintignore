@@ -1,0 +1,7 @@
+# Configuraciones de Build / Tooling
+next.config.js
+postcss.config.js
+tailwind.config.ts
+
+# Tests
+src/**/*.test.js 
