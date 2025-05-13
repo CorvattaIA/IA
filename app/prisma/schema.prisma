@@ -1,0 +1,36 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+    provider = "prisma-client-js"
+    binaryTargets = ["native", "linux-musl-arm64-openssl-3.0.x"]
+    output = "/home/ubuntu/etica_ia/node_modules/.prisma/client"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+model ChatMessage {
+  id        String   @id @default(cuid())
+  name      String?
+  email     String?
+  sector    String?
+  services  String[]
+  message   String
+  metadata  String?  // JSON string for additional data like companyName, conversationStage, etc.
+  createdAt DateTime @default(now())
+}
+
+model DiagnosticResult {
+  id           String   @id @default(cuid())
+  sector       String
+  usesAI       Boolean
+  concernLevel String
+  teamTrained  Boolean
+  maturityLevel String
+  recommendedServices String[]
+  email        String?
+  createdAt    DateTime @default(now())
+}
