@@ -1,0 +1,30 @@
+name: Deploy to Netlify
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to Netlify
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.nfp_ApU5sG7nUEuJy4JRBJtNJwNCiSuQ2vPuf45d }}
+          NETLIFY_SITE_ID: ${{ secrets.0d99b873-33d8-41d5-8dc4-247a16044df2 }}
+        run: netlify deploy --prod --dir=build 
