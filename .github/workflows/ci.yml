@@ -34,5 +34,5 @@ jobs:
         with:
           publish-dir: build
           production-branch: main
-          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          netlify-site-id:      ${{ secrets.NETLIFY_SITE_ID }} 
+          netlify-auth-token: ${{ nfp_ApU5sG7nUEuJy4JRBJtNJwNCiSuQ2vPuf45d }}
+          netlify-site-id:      ${{ secrets.0d99b873-33d8-41d5-8dc4-247a16044df2 }} 
