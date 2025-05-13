@@ -26,3 +26,5 @@ npx serve -s build
 ## Variables de Entorno
 Copia `.env.example`
 _⚡ Trigger CI/CD unificado_
+
+_⚡ Trigger CI and Deploy Workflow_
