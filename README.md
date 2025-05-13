@@ -28,3 +28,5 @@ Copia `.env.example`
 _⚡ Trigger CI/CD unificado_
 
 _⚡ Trigger CI and Deploy Workflow_
+
+_🚀 Deploy plugin Next.js en Netlify_
