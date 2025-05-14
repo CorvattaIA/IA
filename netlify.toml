@@ -10,6 +10,4 @@
   NODE_VERSION = "18"
 
 [[plugins]]
-  package = "@netlify/plugin-nextjs" 
-  [plugins.inputs]
-    debug = true
+  package = "@netlify/plugin-nextjs"
