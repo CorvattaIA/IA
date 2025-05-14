@@ -1,6 +1,5 @@
 [build]
   command = "npm run build"
-  # publish = "out"  # Eliminado para usar el modo estándar de Next.js
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
