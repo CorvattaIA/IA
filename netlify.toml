@@ -1,10 +1,5 @@
 [build]
   command = "npm run build"
-  publish = ".next"
-
-[dev]
-  command = "npm start"
-  port    = 3000
 
 [context.production.environment]
   NODE_VERSION = "18"
