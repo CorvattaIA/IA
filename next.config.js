@@ -1,6 +1,5 @@
 ﻿/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
   images: {
     unoptimized: true,
     domains: ['localhost'],
@@ -17,7 +16,6 @@ const nextConfig = {
     config.resolve.fallback = { fs: false, path: false };
     return config;
   },
-  distDir: 'out',
   eslint: {
     ignoreDuringBuilds: true
   },
