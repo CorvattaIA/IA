@@ -3,3 +3,10 @@ node_modules/ .next
 
 # Local Netlify folder
 .netlify
+# dependencias
+node_modules/
+app/app/node_modules/
+
+# build & runtime
+.next/
+out/
