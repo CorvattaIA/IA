@@ -9,8 +9,7 @@
     "export": "next build && next export",
     "postbuild": "next-sitemap",
     "lint": "eslint src --ext .js,.jsx",
-    "test": "jest --coverage --watchAll=false",
-    "preinstall": "npx nrm use npm"
+    "test": "jest --coverage --watchAll=false"
   },
   "dependencies": {
     "@netlify/plugin-nextjs": "latest",
