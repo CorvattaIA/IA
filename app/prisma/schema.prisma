@@ -34,3 +34,33 @@ model DiagnosticResult {
   email        String?
   createdAt    DateTime @default(now())
 }
+
+model ChatSession {
+  id        String        @id @default(uuid())
+  nombre    String
+  correo    String
+  sector    String
+  servicios String
+  mensajes  ChatMessage[]
+  createdAt DateTime      @default(now())
+}
+
+model ChatMessage {
+  id        String   @id @default(uuid())
+  autor     String
+  texto     String
+  session   ChatSession @relation(fields: [sessionId], references: [id])
+  sessionId String
+  createdAt DateTime @default(now())
+}
+
+model TestDiagnostico {
+  id        String   @id @default(uuid())
+  sector    String
+  ia        String
+  impacto   String
+  formacion String
+  madurez   String
+  resultado String
+  createdAt DateTime @default(now())
+}

@@ -26,3 +26,29 @@ export type DateRange = {
   from: Date | undefined
   to: Date | undefined
 }
+
+export type ChatMessage = {
+  autor: 'usuario' | 'agente';
+  texto: string;
+  timestamp?: string;
+};
+
+export type ChatSession = {
+  id: string;
+  nombre: string;
+  correo: string;
+  sector: string;
+  servicios: string;
+  mensajes: ChatMessage[];
+  createdAt: Date;
+};
+
+export type TestDiagnostico = {
+  sector: string;
+  ia: string;
+  impacto: string;
+  formacion: string;
+  madurez: string;
+  resultado: string[];
+  createdAt: Date;
+};

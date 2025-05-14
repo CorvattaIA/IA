@@ -6,3 +6,35 @@
 nextjs-portal {
   display: none;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+html, body {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  background: #000;
+  color: #fff;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+button, input, select {
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #FFD600;
+}
+::-webkit-scrollbar-thumb {
+  background: #E53935;
+  border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  html, body {
+    font-size: 16px;
+  }
+}

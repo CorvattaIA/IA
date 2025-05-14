@@ -9,9 +9,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="es">
       <head>
-        <link rel="stylesheet" href="/_next/static/css/app.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body>
+      <body className="font-sans bg-black min-h-screen">
         {children}
       </body>
     </html>
