@@ -1,9 +1,0 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[931],{779:function(e,r,s){Promise.resolve().then(s.bind(s,3356))},3356:function(e,r,s){"use strict";s.r(r),s.d(r,{default:function(){return Home}});var n=s(7437);function Home(){return(0,n.jsx)("div",{className:"min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12",children:(0,n.jsx)("div",{className:"relative py-3 sm:max-w-xl sm:mx-auto",children:(0,n.jsx)("div",{className:"relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20",children:(0,n.jsx)("div",{className:"max-w-md mx-auto",children:(0,n.jsx)("div",{className:"divide-y divide-gray-200",children:(0,n.jsxs)("div",{className:"py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7",children:[(0,n.jsx)("h1",{className:"text-3xl font-bold text-gray-900 mb-8",children:"Bienvenido a la Aplicaci\xf3n"}),(0,n.jsx)("p",{children:"Esta es la p\xe1gina principal de tu aplicaci\xf3n."})]})})})})})})}s(2265)},622:function(e,r,s){"use strict";/**
- * @license React
- * react-jsx-runtime.production.min.js
- *
- * Copyright (c) Meta Platforms, Inc. and affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */var n=s(2265),t=Symbol.for("react.element"),i=(Symbol.for("react.fragment"),Object.prototype.hasOwnProperty),a=n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,l={key:!0,ref:!0,__self:!0,__source:!0};function q(e,r,s){var n,c={},o=null,d=null;for(n in void 0!==s&&(o=""+s),void 0!==r.key&&(o=""+r.key),void 0!==r.ref&&(d=r.ref),r)i.call(r,n)&&!l.hasOwnProperty(n)&&(c[n]=r[n]);if(e&&e.defaultProps)for(n in r=e.defaultProps)void 0===c[n]&&(c[n]=r[n]);return{$$typeof:t,type:e,key:o,ref:d,props:c,_owner:a.current}}r.jsx=q,r.jsxs=q},7437:function(e,r,s){"use strict";e.exports=s(622)}},function(e){e.O(0,[971,472,744],function(){return e(e.s=779)}),_N_E=e.O()}]);
